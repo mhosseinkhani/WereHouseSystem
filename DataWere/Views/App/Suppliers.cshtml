@@ -1,0 +1,28 @@
+﻿@model IEnumerable<DataWere.Models.tblSupplier>
+<div class="card-box table-responsive">
+    <h4 class="m-t-0 header-title"><b>لیست تامین کنندگان</b></h4>
+    <div class="text-muted font-13 m-b-30">
+        <button type="button" class="btn btn-success btn-rounded waves-effect waves-light pull-right" data-url="CreateSupplier" data-form="SaveSupplierForm" data-action="تامین کننده" onclick="CreateElement(this)">
+            <span class="btn-label"><i class="fa fa-plus"></i></span>
+            تعریف تامین کننده جدید
+        </button>
+    </div>
+    <br />
+    <br />
+    <br />
+    <table id="SuppliersTbl" class="table table-striped table-bordered dataTable no-footer dtr-inline">
+        <thead>
+            <tr>
+                <th>شرکت</th>
+                <th>نام</th>
+                <th>نام مسعار</th>
+                <th>NIPT</th>
+                <th>تلفن</th>
+                <th>ایمیل</th>
+                <th>عملیات</th>
+            </tr>
+        </thead>
+        <tbody>     
+        </tbody>
+    </table>
+</div>

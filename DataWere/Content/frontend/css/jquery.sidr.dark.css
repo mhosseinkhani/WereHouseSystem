@@ -1,0 +1,152 @@
+.sidr {
+	display: none;
+	position: fixed;
+	top: 0;
+	height: 100%;
+	z-index: 999999;
+	width: 350px;
+	overflow-x: none;
+	overflow-y: auto;
+	font-size: 15px;
+	background: #1c1c1c;
+	color: #fff;
+	padding:30px;
+}
+.sidr .sidr-inner {
+	padding: 0 0 15px
+}
+.sidr .sidr-inner>p {
+	margin-left: 15px;
+	margin-right: 15px
+}
+.sidr.right {
+	left: auto;
+	right: -260px
+}
+.sidr.left {
+	left: -260px;
+	right: auto
+}
+.sidr h1, .sidr h2, .sidr h3, .sidr h4, .sidr h5, .sidr h6 {
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0 0 10px;
+	color: #fff;
+	line-height: 24px;
+	text-transform:uppercase;
+}
+.sidr .sidr-widgets{
+	float:left;
+	width:100%;
+	padding:0 15px;
+}
+.sidr p {
+	font-size: 13px;
+	margin: 0 0 12px
+}
+.sidr p a {
+	color: rgba(255,255,255,0.9)
+}
+.sidr>p {
+	margin-left: 15px;
+	margin-right: 15px
+}
+.sidr ul {
+	display: block;
+	margin: 0 0 15px;
+	padding: 0;
+}
+.sidr ul li {
+	display: block;
+	margin: 0;
+}
+.sidr ul li:hover, .sidr ul li.active, .sidr ul li.sidr-class-active {
+}
+.sidr ul li:hover>a, .sidr ul li:hover>span, .sidr ul li.active>a, .sidr ul li.active>span, .sidr ul li.sidr-class-active>a, .sidr ul li.sidr-class-active>span {
+	color:#fff
+}
+.sidr ul li a, .sidr ul li span {
+	display: block;
+	text-decoration: none;
+	color: #ccc;
+	font-weight:normal;
+	text-transform:capitalize;
+	line-height: normal;
+}
+.sidr ul li ul {
+	border-bottom: none;
+	margin: 0;
+	background:rgba(0,0,0,0.3)
+}
+.sidr ul li ul li {
+	line-height: 40px;
+	font-size: 13px
+}
+.sidr ul li ul li:last-child {
+
+}
+.sidr ul li ul li:hover, .sidr ul li ul li.active, .sidr ul li ul li.sidr-class-active {
+
+	line-height: 41px
+}
+.sidr ul li ul li:hover>a, .sidr ul li ul li:hover>span, .sidr ul li ul li.active>a, .sidr ul li ul li.active>span, .sidr ul li ul li.sidr-class-active>a, .sidr ul li ul li.sidr-class-active>span {
+
+}
+.sidr ul li ul li a, .sidr ul li ul li span {
+	color: rgba(255,255,255,0.8);
+	padding-left: 30px
+}
+.sidr form {
+	margin: 0;
+}
+
+.sidr .kf-sidebar h2{
+	padding:0px;
+	background:none;
+	text-transform:capitalize;
+	font-size:18px;
+	box-shadow:none;
+}
+.sidr .kf-sidebar form {
+	margin:0px
+}
+.sidr label {
+	font-size: 13px
+}
+.sidr input[type="text"], .sidr input[type="password"], .sidr input[type="date"], .sidr input[type="datetime"], .sidr input[type="email"], .sidr input[type="number"], .sidr input[type="search"], .sidr input[type="tel"], .sidr input[type="time"], .sidr input[type="url"], .sidr textarea, .sidr select {
+	width: 100%;
+	font-size: 13px;
+	padding: 5px 10px;
+	margin: 0 0 10px;
+	border: none;
+	background: rgba(0,0,0,0.1);
+	color: rgba(255,255,255,0.6);
+	display: block;
+	clear: both;
+	height:40px
+}
+.sidr input[type=checkbox] {
+	width: auto;
+	display: inline;
+	clear: none
+}
+.sidr input[type=button], .sidr input[type=submit] {
+	color: #333;
+	background: #fff
+}
+.sidr input[type=button]:hover, .sidr input[type=submit]:hover {
+	background: rgba(255,255,255,0.9)
+}
+
+
+
+.sidr .widget-tag-cloud ul li{
+	margin: 0px 0px 5px 5px;
+
+}
+
+.sidr .logo_wrap{
+	text-align: center;
+	margin-bottom: 30px;
+
+}

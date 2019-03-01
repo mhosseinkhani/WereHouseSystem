@@ -1,0 +1,27 @@
+﻿@model IEnumerable<itka.Models.tblClient>
+<div class="card-box table-responsive">
+    <h4 class="m-t-0 header-title"><b>Menaxho Klientët</b></h4>
+    <div class="text-muted font-13 m-b-30">
+        <button type="button" class="btn btn-success btn-rounded waves-effect waves-light pull-right" data-url="CreateClient" data-form="SaveClientForm" data-action="KLIENT" onclick="CreateElement(this)">
+            <span class="btn-label"><i class="fa fa-plus"></i></span>
+            Shto klient
+        </button>
+    </div>
+    <br />
+    <br />
+    <br />
+    <table id="ClientsTbl" class="table table-striped table-bordered dataTable no-footer dtr-inline">
+        <thead>
+            <tr>                
+                <th>Emri</th>
+                <th>Mbiemri</th>
+                <th>Kompania</th>
+                <th>NIPT</th>
+                <th>Tel</th>
+                <th>Email</th>
+                <th>Veprime</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>

@@ -1,0 +1,149 @@
+/*
+============================================================
+		   Font Color
+============================================================
+*/
+
+.nav_des li a:hover, .kf_courses_wrap:hover .courses_des_hding1 h5, .kf_courses_des > span > small, .kf_inr_breadcrumb ul li > a:hover, .kf_intro_des:hover .kf_intro_des_caption a, .kf_intro_des:hover span, .kf_intro_des:hover h6, .kf_edu2_tab_wrap .nav-tabs > li > a:hover, .kf_edu2_tab_wrap .nav-tabs .active a, .edu2_cur_wrap:hover .edu2_cur_des > h5 a, .edu2_cur_wrap:hover .edu2_cur_des > span, .kf_edu2_tab_des .browse_all, .kf_edu2_tab_des .customNavigation .btn:hover, .edu2_gallery_des .active, .edu2_gallery_des a:hover, .edu2_gallery_des > figure > figcaption > a, .loadmore a, .edu2_faculty_des2 h6 a, .edu2_faculty_des figcaption a, .edu2_event_des h4, .edu2_event_des > a, .post-option > li > a:hover, .edu2_pricing_des ul li a:hover, .edu2_pricing_des:hover .subscribe, .edu_testemonial_wrap > a span, .rpost_thumb_des span i, .sidebar_archive_des > li a:hover, .sidebar_rpost_des li:hover h6 a, .sdbar_categories_des > li a:hover,  .edu2_techer_des h6 a, .edu2_techer_wrap figcaption a,  .edu2_blogpg_des ul li a:hover, .edu2_blogpg_des:hover ul li i, .edu2_blogpg_des .blog-readmore,  .abt_courses_des:hover i, .abt_courses_des:hover h6, .abt_courses_des a:hover, .std_name_des > a:hover,  .kf_event_list_des h4 a, .kf_event_list_links li i,  .edu2_col_4_des span,  .video_link_wrap a, .edu2_col_3_ftr a:hover,  .blog_3_des ul li a,  .edu2_footer_contant_des > ul > li > a:hover, .readmore, .readmore:hover,  .teacher_bio_des ul li i, .kf_training_wrap ul li:after, .kf_training_date, .kf_training_des span, .kf_training_des h6 a:hover,  .kf_convocation_wrap h4 span, .heading_5 h4 span, .kf_event_speakers_des h5 a, .blog_detail_meta li i, .comment_reply:hover, .autor_social li a:hover, .blog_detail_meta li a:hover, .kf_courses_tabs .nav-tabs > li.active > a, .course_detail_meta li a:hover, .course_detail_meta li:hover, .teacher_des small, .teacher_meta li a:hover, .inputs_des span i, .contact_meta li i, .location_des > h6, .contact_meta li a:hover, .location_meta li i, .location_meta li a:hover, .location_des > a:hover, .location_des > a:hover i, .contact_2_headung h3,  .error_des span, .error_des h3, .btn-3, #filterable-item-filter-1 > li .active, .kf_edu2_heading1 h5, .widget-links ul li a:hover:before, .widget-links ul li a:hover {
+	color: #FF7043;
+}
+/*
+	  ============================================================
+		   Background Color
+	  ============================================================
+*/
+
+.kf_edu2_logo, .kf_topbar_wrap, .nav_des > li::before, .nav_des a::after, .nav_des a::before,  .btn-1:hover,  .kf_edu2_search_wrap form > button, .kf_edu2_search_wrap .dropdown-menu > li > a:focus, .kf_edu2_search_wrap .dropdown-menu > li > a:hover, .kf_intro_des figure:before, .kf_edu2_tab_wrap .nav-tabs > li > a:hover:before, .kf_edu2_tab_wrap .nav-tabs > li.active > a:before, .kf_edu2_tab_wrap .nav-tabs > li.active > a:focus:before, .kf_edu2_tab_wrap .nav-tabs > li.active > a:hover:before, figure:before, .edu2_pricing_des:hover span, .edu_testemonial_wrap:before, .edu2_testemonial_slider_wrap .owl-page.active,  .kf_courses_wrap figure:before, .kf_courses_des > a:hover, .sdb_tag_cloud_des li a:hover,  .edu2_blogpg_des .blog-readmore:hover, .kf_edu_pagination_wrap .pagination > .active > a, .kf_edu_pagination_wrap .pagination > .active > a:focus, .kf_edu_pagination_wrap .pagination > .active > a:hover, .kf_edu_pagination_wrap .pagination > .active > span, .kf_edu_pagination_wrap .pagination > .active > span:focus, .kf_edu_pagination_wrap .pagination > .active > span:hover, .btn-6:hover, .inr_pg_search_wrap, .edu2_col_3_wrap figure figcaption a:hover, .blog_3_wrap .blog_3_sidebar li:hover, .edu2_ft_topbar_wrap, .edu2_col_4_wrap:hover .btn-2, .teacher_bio_logo span, .teacher_thumb figcaption a, .progress_heading:before, .bar, .training_heading:before, .kf_training_outer_des:hover .kf_training_date > span, .kf_convocation_des a, .convocation_link, .kf_event speakers h5, .event_link:hover, .blog_detail_thumbnail figure figcaption a, .blog_pg_form form button, .course_detail_thumbnail figure figcaption a, .kf_courses_tabs .nav-tabs > li > a::before, .apply, .teacher_outer_wrap span,  .error_thumb figure a:before, .contact_des button:hover, .filterable_heading .dropdown-menu > li > a:hover, .filterable_thumb figure:before, .edu_masonery_thumb figure figcaption, #filterable-item-filter-1 a, .pagination > li > a:hover, #header_2 .top_bar_2, #header_2 .nav_2 ul li a:before, #header_2 .top_nav li a:before, .nav_2 ul ul li a:hover, .edu2_navigation ul ul li a:hover, .kf_topbar_wrap .pull-right button, .contact_des button, .contact_2 button, .selectric-items li.selected, .selectric-items li:hover, .get-admition, 
+.widget-categories ul li a:hover,  
+.widget-courses-list figure a, .widget-tag-cloud ul li a:hover, .nav_2 ul li a:hover, #mobile-header, .sidr ul li:hover>a, .sidr ul li:hover>span, .sidr ul li.active>a, .sidr ul li.active>span, .sidr ul li.sidr-class-active>a, .sidr ul li.sidr-class-active>span, 
+.btn-style, .cont_socil_meta li a:hover, .edu_masonery_thumb .caption,.abt_univ_des .btn-3:hover{
+	background-color: #FF7043;
+}
+/*
+	  ============================================================
+		   Border Color
+	  ============================================================
+*/
+
+.nav_des li,  .btn-1:hover, .edu2_serc_des input[type="text"]:focus, .edu2_serc_des .btn.btn-default.dropdown-toggle:focus, .kf_courses_des > a:hover, .kf_edu2_tab_des .browse_all, .kf_edu2_tab_des .customNavigation .btn:hover, .loadmore a, .edu2_faculty_des:hover .edu2_faculty_des2, .sdb_tag_cloud_des li a:hover, .kf_sidebar_srch_wrap form > input[type="search"]:focus,  .edu2_techer_wrap:hover .edu2_techer_des,  .edu2_blogpg_des .blog-readmore,  .edu2_col_4_wrap:hover .edu2_col_4_des figure, .btn-6:hover, .teacher_bio_logo, .teacher_thumb figure:after, .kf_training_date, .convocation_timing, .event_link:hover, .kf_blog_detail_des blockquote, .blog_pg_form textarea:focus, .blog_pg_form input[type="e-mail"]:focus, .blog_pg_form input[type="text"]:focus, /*course detail start*/ .teacher_meta li a:hover,  .cont_socil_meta li a:hover, .error_thumb, .error_thumb figure a, input[type="text"]:focus, input[type="email"]:focus, textarea:focus, .btn-3, #filterable-item-filter-1 a, #filterable-item-filter-1 > li .active, .pagination > li > a:hover, .owl-page.active > span, .widget-search input[type="search"]:focus, .widget-tag-cloud ul li a:hover {
+	border-color: #FF7043 !important;
+}
+/*
+	  ============================================================
+		   HOME PAGE EXTRA COLOR START
+	  ============================================================
+*/
+
+/*color-1*/
+.kf_cur_catg_des.color-1 > span {
+	color: #00a997;
+}
+.kf_cur_catg_des.color-1:hover {
+	background-color: #00a997;
+}
+.kf_cur_catg_des.color-1:before {
+	background-color: #00a997;
+}
+.kf_cur_catg_des.color-1:hover:before {
+	background-color: #00a997;
+}
+/*color-2*/
+.kf_cur_catg_des.color-2 > span {
+	color: #09426a;
+}
+.kf_cur_catg_des.color-2:hover {
+	background-color: #09426a;
+}
+.kf_cur_catg_des.color-2:before {
+	background-color: #09426a;
+}
+.kf_cur_catg_des.color-2:hover:before {
+	background-color: #09426a;
+}
+/*color-3*/
+.kf_cur_catg_des.color-3 > span {
+	color: #24ccc0;
+}
+.kf_cur_catg_des.color-3:hover {
+	background-color: #24ccc0;
+}
+.kf_cur_catg_des.color-3:before {
+	background-color: #079d92;
+}
+.kf_cur_catg_des.color-3:hover:before {
+	background-color: #079d92;
+}
+/*color-4*/
+.kf_cur_catg_des.color-4 > span {
+	color: #45aef4;
+}
+.kf_cur_catg_des.color-4:hover {
+	background-color: #45aef4;
+}
+.kf_cur_catg_des.color-4:before {
+	background-color: #008be7;
+}
+.kf_cur_catg_des.color-4:hover:before {
+	background-color: #008be7;
+}
+/*color-5*/
+.kf_cur_catg_des.color-5 > span {
+	color: #f8c331;
+}
+.kf_cur_catg_des.color-5:hover {
+	background-color: #f8c331;
+}
+.kf_cur_catg_des.color-5:before {
+	background-color: #e1a500;
+}
+.kf_cur_catg_des.color-5:hover:before {
+	background-color: #e1a500;
+}
+/*color-6*/
+.kf_cur_catg_des.color-6 > span {
+	color: #ad33c6;
+}
+.kf_cur_catg_des.color-6:hover {
+	background-color: #ad33c6;
+}
+.kf_cur_catg_des.color-6:before {
+	background-color: #9000ae;
+}
+.kf_cur_catg_des.color-6:hover:before {
+	background-color: #9000ae;
+}
+/*
+============================================================
+		   HOME PAGE EXTRA COLOR END
+============================================================
+*/
+/*
+============================================================
+		   Transaction Effect
+============================================================
+*/
+
+.kf_topbar_wrap a, .nav_des a::after, .nav_des a::before, .nav_des a, .nav_des li, .edu2_navigation ul ul, .edu2_navigation ul ul ul, .edu2_navigation ul ul ul,  .btn-1,  .kf_intro_des figure figcaption a, .kf_intro_des_caption span, .kf_cur_catg_des:before, .kf_cur_catg_des > span, .kf_cur_catg_capstion h5, .kf_cur_catg_capstion p, .kf_cur_catg_des, .kf_cur_catg_des.color-1, .kf_edu2_search_wrap form > button, .kf_edu2_search_wrap .dropdown-menu > li > a, .edu2_serc_des input[type="text"], .edu2_serc_des .btn.btn-default.dropdown-toggle, .kf_intro_des figure:before, .kf_intro_des_caption a, .kf_intro_des_caption h6, .kf_edu2_tab_wrap .nav-tabs > li > a:before, .kf_edu2_tab_wrap .nav-tabs > li > a, .edu2_cur_des > h5 a, .edu2_cur_des > span, figure:before, .edu2_cur_wrap > figure figcaption a, .kf_edu2_tab_des .browse_all, .kf_edu2_tab_des .customNavigation .btn .edu2_gallery_des a, .edu2_gallery_des > figure > figcaption, .loadmore a, .edu2_faculty_des, .edu2_faculty_des2, .edu2_faculty_des figcaption a, .edu2_faculty_des figcaption, .edu2_event_des > a, .readmore i, .readmore, .post-option > li > a, .thumb figure figcaption, .edu2_pricing_des span, .edu2_pricing_des span sup, .edu2_pricing_des span h3, .edu2_pricing_des span strong, .edu2_pricing_des ul li a, .subscribe, .edu2_pricing_des,  a, figure, figcaption, .courses_des_hding1 h5, .kf_courses_des, .kf_courses_des > a, .kf_inr_breadcrumb ul li > a, .kf_courses_wrap figure:before, .kf_courses_wrap figure a, .kf_edu_pagination_wrap .pagination > .active > a, .kf_edu_pagination_wrap .pagination > .active > a:focus, .kf_edu_pagination_wrap .pagination > .active > a:hover, .kf_edu_pagination_wrap .pagination > .active > span, .kf_edu_pagination_wrap .pagination > .active > span:focus, .kf_edu_pagination_wrap .pagination > .active > span:hover, .kf_sidebar_srch_wrap form > input[type="search"],  .edu2_techer_des, .edu2_techer_wrap,  .edu2_blogpg_des ul li i,  .abt_courses_des i, .abt_courses_des h6, .abt_courses_des,  .kf_event_list_wrap, .edu2_col_3_wrap,  .edu2_ft_topbar_des form input[type="email"], .edu2_ft_topbar_des form button, .edu2_footer_contant_des > ul > li > a, .cards_wrap li a:before, .cards_wrap li a i, .blog_3_wrap:hover .blog_3_sidebar li,  .kf_training_outer_des, .kf_training_date > span, .blog_pg_form textarea, .blog_pg_form input[type="e-mail"], .blog_pg_form input[type="text"], .blog_pg_form form button, li, .kf_courses_tabs .nav-tabs > li.active > a::before, .btn-6, .btn-2, .convocation_link, figcaption, .error_thumb figure a::before, input[type="text"], input[type="email"], textarea, .location_des > a i, button, .edu2_gallery_des > figure > figcaption > a:hover, .edu2_footer_contant_des ul.instagram li img, .nav_2 ul li a:before, .nav_2 ul ul, .kf_event_speakers_des, .kf_event_speakers_des figure img, .event_gallery_des li img, .widget-links ul li a:before, .widget-search input[type="search"], .widget-archive ul li a, .edu_masonery_thumb .caption, .edu_masonery_thumb:before {
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+}
+/*
+	  ============================================================
+		  Content Selection
+	  ============================================================
+*/
+::selection {
+	background: #e37d39;
+	color: #ffffff;
+}
+::-webkit-selection {
+ background: #e37d39;
+ color: #ffffff;
+}
+::-moz-selection {
+ background: #e37d39;
+ color: #ffffff;
+}

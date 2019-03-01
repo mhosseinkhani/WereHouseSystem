@@ -1,0 +1,396 @@
+﻿<!DOCTYPE html>
+<html class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link rel="shortcut icon" href="~/Content/assets/images/itkafav.png">
+    <link rel="stylesheet" href="~/Content/assets/plugins/morris/morris.css">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/core.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/components.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/assets/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/assets/plugins/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/assets/plugins/datatables/fixedHeader.bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/assets/plugins/datatables/responsive.bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/assets/plugins/datatables/scroller.bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/assets/plugins/datatables/dataTables.colVis.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/assets/plugins/datatables/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/assets/plugins/datatables/fixedColumns.dataTables.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/pages.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/plugins/bootstrap-sweetalert/sweet-alert.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/plugins/validation/css/bootstrapValidator.min.css" rel="stylesheet" />
+    <link href="~/Content/custom/css/custom.css" rel="stylesheet" />
+</head>
+<body class="widescreen fixed-left-void">
+    <div id="wrapper" class="forced">
+        @Html.Action("TopBarPartial", "Main")
+        <div class="left side-menu">
+            <div class="slimScrollDiv">
+                <div class="sidebar-inner slimscrollleft">
+                    <!--- Divider -->
+                    <div id="sidebar-menu">
+                        <ul>
+                            <li><a href="/App/Index" class="waves-effect"><i class="ti-stats-up"></i> <span> Stoku </span></a></li>
+                            <li><a href="/App/Products" class="waves-effect"><i class="ti-car"></i> <span> Artikujt </span></a></li>
+                            <li><a href="/App/Clients" class="waves-effect"><i class="ti-user"></i> <span> Klientët </span></a></li>
+                            <li><a href="/App/Suppliers" class="waves-effect"><i class="ti-support"></i> <span> Furnitorët </span></a></li>
+                            <li><a href="/App/Warehouses" class="waves-effect"><i class="ti-support"></i> <span> Magazinat </span></a></li>
+                            <li><a href="/App/Units" class="waves-effect"><i class="ti-package"></i> <span> Njësitë </span></a></li>
+
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div><div class="slimScrollBar" style="background: rgb(152, 166, 173); width: 5px; position: absolute; top: -730px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 196.489px; visibility: visible;"></div><div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div>
+            </div>
+        </div>
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="">
+                <div class="">
+                    <!-- Page-Title -->
+                    @RenderBody()
+                </div> <!-- container -->
+            </div> <!-- content -->
+            <footer class="footer">
+                © 2018. All rights reserved. Developer: Brigite Peposhi.
+            </footer>
+        </div>
+    </div>
+    <div id="create-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-lg" style="left:0% !important">
+            <div class="modal-content p-0 b-0">
+                <div class="panel panel-color panel-success">
+                    <div class="panel-heading">
+                        <i class="fa fa-times-circle pull-right fa-2x" style="cursor:pointer;color:white" onclick="CloseModal('create-modal')" aria-hidden="true"></i>
+                        <h3 class="padding-header" style="color:white" id="CreateModalHeader"></h3>
+                    </div>
+                    <div class="panel-body">
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div id="update-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-lg" style="left:0% !important">
+            <div class="modal-content p-0 b-0">
+                <div class="panel panel-color panel-warning">
+                    <div class="panel-heading">
+                        <i class="fa fa-times-circle pull-right fa-2x" style="cursor:pointer;color:white" onclick="CloseModal('update-modal')" aria-hidden="true"></i>
+                        <h3 class="padding-header" style="color:white" id="EditModalHeader"></h3>
+                    </div>
+                    <div class="panel-body">
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->s
+    <div id="view-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-lg" style="left:0% !important">
+            <div class="modal-content p-0 b-0">
+                <div class="panel panel-color panel-success">
+                    <div class="panel-heading">
+                        <i class="fa fa-times-circle pull-right fa-2x" style="cursor:pointer;color:white" onclick="CloseModal('view-modal')" aria-hidden="true"></i>
+                        <h3 class="padding-header" style="color:white" id="ViewModalHeader"></h3>
+                    </div>
+                    <div class="panel-body">
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    @RenderSection("scripts", required: false)
+
+    <script src="~/Content/assets/js/jquery.min.js"></script>
+    <script src="~/Content/assets/js/bootstrap.min.js"></script>
+    @*<script src="~/Content/assets/plugins/jquery-ui/jquery-ui.min.js"></script>*@
+    <script src="~/Content/assets/js/detect.js"></script>
+    <script src="~/Content/assets/js/fastclick.js"></script>
+    <script src="~/Content/assets/js/jquery.slimscroll.js"></script>
+    <script src="~/Content/assets/js/jquery.blockUI.js"></script>
+    <script src="~/Content/assets/js/waves.js"></script>
+    <script src="~/Content/assets/js/wow.min.js"></script>
+    <script src="~/Content/assets/js/jquery.nicescroll.js"></script>
+    <script src="~/Content/assets/js/jquery.scrollTo.min.js"></script>
+    <script src="~/Content/assets/plugins/peity/jquery.peity.min.js"></script>
+    <script src="~/Content/assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="~/Content/assets/pages/jquery.dashboard_3.js"></script>
+    <script src="~/Content/assets/js/jquery.core.js"></script>
+    <script src="~/Content/assets/js/jquery.app.js"></script>
+    <script src="~/Content/assets/plugins/moment/moment.js"></script> 
+    <script src="~/Content/assets/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/Content/assets/plugins/datatables/dataTables.bootstrap.js"></script>
+    <script src="~/Content/assets/plugins/datatables/dataTables.buttons.min.js"></script>
+    <script src="~/Content/assets/plugins/datatables/buttons.bootstrap.min.js"></script>
+    <script src="~/Content/assets/plugins/datatables/vfs_fonts.js"></script>
+    <script src="~/Content/assets/plugins/datatables/buttons.html5.min.js"></script>
+    <script src="~/Content/assets/plugins/datatables/buttons.print.min.js"></script>
+    <script src="~/Content/assets/plugins/datatables/dataTables.fixedHeader.min.js"></script>
+    <script src="~/Content/assets/plugins/datatables/dataTables.keyTable.min.js"></script>
+    <script src="~/Content/assets/plugins/datatables/dataTables.responsive.min.js"></script>
+    <script src="~/Content/assets/plugins/datatables/responsive.bootstrap.min.js"></script>
+    <script src="~/Content/assets/plugins/datatables/dataTables.scroller.min.js"></script>
+    <script src="~/Content/assets/plugins/datatables/dataTables.colVis.js"></script>
+    <script src="~/Content/assets/plugins/datatables/dataTables.fixedColumns.min.js"></script>
+    <script src="~/Content/assets/pages/datatables.init.js"></script>
+    <script src="~/Content/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/Content/assets/plugins/notifyjs/js/notify.js"></script>
+    <script src="~/Content/assets/plugins/notifications/notify-metro.js"></script>
+    <script src="~/Content/assets/plugins/bootstrap-sweetalert/sweet-alert.min.js"></script>
+    <script type="text/javascript" src="~/Content/assets/plugins/bootstrap-filestyle/js/bootstrap-filestyle.min.js"> </script>
+    <script src="~/Content/assets/plugins/validation/js/bootstrapValidator.min.js"></script>
+    <script src="~/Content/custom/js/crud.js"></script>
+    <script src="~/Content/assets/plugins/validation/js/language/al_AL.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $("#ClientsTbl").dataTable({
+                "bInfo": false,
+                ajax: {
+                    url: '/App/GetClients',
+                    contentType: "application/json; charset=utf-8",
+                    complete: function (data) {
+                    }
+                },
+                pageLength: 10,
+                processing: true,
+                serverSide: true,
+                columns: [
+                        { "data": "name", "searchable": true, "orderable": true, "search": { "value": "", "regex": true } },
+                        { "data": "surname", "searchable": true, "orderable": true, "search": { "value": "", "regex": true } },
+                        { "data": "company", "searchable": true, "orderable": true, "search": { "value": "", "regex": true } },
+                        { "data": "nipt" },
+                        { "data": "phone1" },
+                        { "data": "email" },
+                        { "data": "actions" }
+                ],
+            });
+            $("#ProductsTbl").dataTable({
+                "bInfo": false,
+                ajax: {
+                    url: '/App/GetProducts',
+                    contentType: "application/json; charset=utf-8",
+                    complete: function (data) {
+                    }
+                },
+                pageLength: 10,
+                processing: true,
+                serverSide: true,
+                columns: [
+                        { "data": "name", "searchable": true, "orderable": true, "search": { "value": "", "regex": true } },
+                        { "data": "number", "searchable": true, "orderable": true, "search": { "value": "", "regex": true } },
+                        { "data": "description"},
+                        { "data": "unit" },
+                        { "data": "minquantity" },
+                        { "data": "actions" }
+                ],
+            });
+            $("#SuppliersTbl").dataTable({
+                "bInfo": false,
+                ajax: {
+                    url: '/App/GetSuppliers',
+                    contentType: "application/json; charset=utf-8",
+                    complete: function (data) {
+                    }
+                },
+                pageLength: 10,
+                processing: true,
+                serverSide: true,
+                columns: [
+                        { "data": "company", "searchable": true, "orderable": true, "search": { "value": "", "regex": true } },
+                        { "data": "name", "searchable": true, "orderable": true, "search": { "value": "", "regex": true } },
+                        { "data": "surname", "searchable": true, "orderable": true, "search": { "value": "", "regex": true } },
+                        { "data": "nipt" },
+                        { "data": "phone1" },
+                        { "data": "email" },
+                        { "data": "actions" }
+                ],
+            });
+            $('#UnitsTbl').dataTable({
+                "bInfo": false,
+                ajax: {
+                    url: '/App/GetUnits',
+                    contentType: "application/json; charset=utf-8",
+                    complete: function (data) {
+                    }
+                },
+                pageLength: 10,
+                processing: true,
+                serverSide: true,
+                columns: [
+                        { "data": "name", "searchable": true, "orderable": true, "search": { "value": "", "regex": true } },
+                        { "data": "description", "searchable": true, "orderable": true, "search": { "value": "", "regex": true } },
+                        { "data": "actions" }
+                ],
+            });
+            $('#WarehousesTbl').dataTable({
+                "bInfo": false,
+                ajax: {
+                    url: '/App/GetWarehouses',
+                    contentType: "application/json; charset=utf-8",
+                    complete: function (data) {
+                    }
+                },
+                pageLength: 10,
+                processing: true,
+                serverSide: true,
+                columns: [
+                        { "data": "name", "searchable": true, "orderable": true, "search": { "value": "", "regex": true } },
+                        { "data": "address"},
+                        { "data": "description"},
+                        { "data": "actions" }
+                ],
+            });
+        });
+        function CreateElement(val) {
+            var url = $(val).data("url");
+            var action = $(val).data("action");
+            var form = $(val).data("form");
+            $.ajax({
+                type: "GET",
+                url: "/App/" + url,
+                dataType: "html",
+                success: function (data) {
+                    $("#create-modal").find(".panel-body").html(data);
+                    document.getElementById("CreateModalHeader").innerHTML = "KRIJO " + action;
+                    $("#" + form).bootstrapValidator();                    
+                    $("#create-modal").modal('show');
+                }
+            });
+        }
+        function SubmitCreateForm(val) {
+            var url = $(val).data("url");
+            var id = $(val).data("id");
+            var table = $(val).data("table");
+            var validator = $('#' + id).data('bootstrapValidator');
+            validator.validate();
+            if (validator.isValid()) {
+                $.ajax({
+                    type: "POST",
+                    url: "/App/" + url,
+                    data: $("#" + id).serialize(),
+                    success: function (data) {
+                        if (data.success) {
+                            $.Notification.notify('success', 'top right', 'Sukses!', 'Të dhënat u ruajtën me sukses!');
+                        } else {
+                            $.Notification.notify('error', 'top right', 'Gabim!', 'Një gabim ndodhi! Provoni përsëri më vonë.');
+                        }
+                        ReloadDatableAjax(table);
+                        $("#create-modal").modal('hide');
+                    }
+                });
+            }
+        }
+        function SubmitEditForm(val) {
+            var url = $(val).data("url");
+            var id = $(val).data("id");
+            var table = $(val).data("table");
+            var validator = $('#' + id).data('bootstrapValidator');
+            validator.validate();
+            if (validator.isValid()) {
+                $.ajax({
+                    type: "POST",
+                    url: "/App/" + url,
+                    data: $("#" + id).serialize(),
+                    success: function (data) {
+                        if (data.success) {
+                            $.Notification.notify('success', 'top right', 'Sukses!', 'Ndryshimet u ruajtën me sukses!');
+                        } else {
+                            $.Notification.notify('error', 'top right', 'Gabim!', 'Një gabim ndodhi! Provoni përsëri më vonë.');
+                        }
+                        ReloadDatableAjax(table);
+                        $("#update-modal").modal('hide');
+                    }
+                });
+            }
+        }
+        function ReloadDatableAjax(id) {
+            $('#' + id).DataTable().ajax.reload(null, false);
+        }
+        function GetDeleteSwal(val) {
+            var url = $(val).data("url");
+            var id = parseInt($(val).data("id"));
+            var table = $(val).data("table");
+            var jsdata = '{"id": "' + id + '"}';
+            swal({
+                title: "A jeni i sigurt ?",
+                text: "Veprimi nuk mund te kthehet !",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonText: "Fshije",
+                cancelButtonText: "Anullo",
+                closeOnConfirm: true,
+                closeOnCancel: false
+            }, function (isConfirm) {
+                if (isConfirm) {
+                    $.ajax({
+                        type: "POST",
+                        url: "/App/" + url,
+                        data: jsdata,
+                        traditional: true,
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "html",
+                        success: function (data) {
+                            if (JSON.parse(data).success) {
+                                $.Notification.notify('success', 'top right', 'U fshi', 'U fshi me sukses!');
+                            } else {
+                                $.Notification.notify('error', 'top right', 'nuk u fshi', 'Nje gabim ndodhi!');
+                            }
+                            ReloadDatableAjax(table);
+                        }
+                    });
+                } else {
+                    swal("U anullua", "Veprimi u anullua :)", "error");
+                }
+            });
+        }
+        function GetViewModal(val) {           
+            var url = $(val).data("url");
+            var id = $(val).data("id");
+            var subject = $(val).data("subject");            
+            var obj = { id: id };
+            $.ajax({
+                type: "POST",
+                url: "/App/" + url,
+                data: JSON.stringify(obj),
+                contentType: "application/json; charset=utf-8",
+                dataType: "html",
+                success: function (data) {
+                    $("#view-modal").find(".panel-body").html(data);
+                    document.getElementById("ViewModalHeader").innerHTML = "Detajet për " + subject;
+                    $("#view-modal").modal('show');
+                }
+            });
+        }
+        function GetEditModal(val) {
+            var url = $(val).data("url");
+            var id = $(val).data("id");
+            var subject = $(val).data("subject");
+            var form = $(val).data("form");
+            var obj = { id: id };
+            $.ajax({
+                type: "POST",
+                url: "/App/" + url,
+                data: JSON.stringify(obj),
+                contentType: "application/json; charset=utf-8",
+                dataType: "html",
+                success: function (data) {
+                    $("#update-modal").find(".panel-body").html(data);
+                    document.getElementById("EditModalHeader").innerHTML = "Përditëso të dhënat për " + subject;
+                    $("#" + form).bootstrapValidator();
+                    $("#update-modal").modal('show');
+                }
+            });
+        }       
+        function CloseModal(val) {
+            $("#" + val).modal('hide');
+        }
+    </script>
+</body>
+</html>

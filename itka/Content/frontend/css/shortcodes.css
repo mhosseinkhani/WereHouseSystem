@@ -1,0 +1,99 @@
+/*
+	  ==============================================================
+		   HOME PAGE SHORTCODE CSS START
+	  ==============================================================
+*/
+.btn-effect::after {
+    content: "";
+    height: 50%;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    z-index: -1;
+}
+
+
+.kf_content_wrap figure:before{
+    content: "";
+    left: 10%;
+    right: 10%;
+    top: 10%;
+    bottom: 10%;
+    position: absolute;
+    opacity: 0;
+}
+/*COURSES LIST PAGE IMG EFFEC START*/
+.sdb_courses_list_des li:hover figure:before,
+.widget-recent-posts li:hover figure:before,
+/*COURSES LIST PAGE IMG EFFEC END*/
+/*OUR TEACHER PAGE IMG EFFEC START*/
+.edu2_techer_wrap:hover figure:before,
+/*OUR TEACHER PAGE IMG EFFEC END*/
+/*OUR OUR EVENT PAGE IMG EFFEC START*/
+.edu2_event_wrap:hover figure:before,
+/*OUR OUR EVENT PAGE IMG EFFEC START*/
+/*COLUM 4 PAGE START*/
+.edu2_col_4_wrap:hover > figure:before,
+/*COLUM 4 PAGE END*/
+/*OUR COURSES START*/
+.edu2_col_3_wrap:hover > figure:before,
+/*OUR COURSES END*/
+/*blog detail start*/
+.blog_thumb_wrap figure:hover:before,
+/*blog detail end*/
+.blog_3_wrap:hover .blog_3_des figure:before,
+.kf_event_list_wrap:hover .kf_event_list_thumb figure:before,
+.edu2_new_des:hover .col-md-6 > figure:before,
+.edu2_faculty_des:hover figure:before,
+.edu2_gallery_des:hover figure:before,
+.kf_intro_des:hover figure:before,
+.edu2_cur_wrap:hover > figure::before
+{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.70;
+}
+
+/**/
+.course_detail_thumbnail figure figcaption a:hover,
+.blog_detail_thumbnail:hover figure figcaption a,
+.blog_pg_form form button:hover,
+.convocation_link:hover,
+.kf_convocation_des a:hover,
+.edu2_ft_topbar_des form button:hover,
+.kf_edu2_tab_des .btn-3:hover,
+.loadmore a:hover,
+.contact_2 button:hover
+{
+    background-color: #000000;
+    color: #fff;
+    border-color: #000000 !important;
+}
+/*COURSES LIST PAGE IMG EFFEC START*/
+.kf_courses_wrap  figure:before{
+    content: "";
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+}
+.kf_courses_wrap:hover figure:before{
+    opacity: 0.75;
+}
+.kf_courses_wrap:hover figure a{
+    opacity: 1;
+}
+/*COURSES LIST PAGE IMG EFFEC START*/
+
+.edu2_col_3_wrap:hover
+{
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.18);
+}

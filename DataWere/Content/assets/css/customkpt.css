@@ -1,0 +1,18 @@
+﻿.edit, .delete, .view {
+    cursor: pointer;
+    font-size: 18px;
+    padding:4px;
+}
+
+.delete {
+color:#d61111;
+}
+
+.view {
+color:#11b9d6;
+
+}
+
+.edit {
+    color: #1eb190;
+}

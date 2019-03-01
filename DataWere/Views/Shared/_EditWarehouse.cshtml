@@ -1,0 +1,45 @@
+﻿@model DataWere.Models.tblWarehouse
+
+@using (@Html.BeginForm("SaveWarehouse", "App", FormMethod.Post, new { @id = "SaveChangesWarehouseForm", enctype = "multipart/form-data", @data_toggle = "validator" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="col-sm-8 col-sm-offset-2">
+            <div class="form-group">
+                <label class="col-md-12 pull-left">نام<span style="color:red;">*</span></label>
+                <div class="col-md-12">
+                    @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control", Value = Model.name, required = "required", @data_bv_notempty_message = "Emërtimi nuk mund të lihet bosh!" } })
+                    @Html.ValidationMessageFor(model => model.name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-12 pull-left">آدرس<span style="color:red;">*</span></label>
+                <div class="col-md-12">
+                    @Html.EditorFor(model => model.address, new { htmlAttributes = new { @class = "form-control", Value = Model.address } })
+                    @Html.ValidationMessageFor(model => model.name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-12">
+                    توضیحات
+                </label>
+                <div class="col-md-12">
+                    <div class="clearfix"></div>
+                    @Html.EditorFor(model => model.description, new { htmlAttributes = new { @class = "form-control", Value = Model.description } })
+                    @Html.HiddenFor(model => model.status, new { Value = true })
+                    @Html.HiddenFor(model => model.id, new { Value = Model.id })
+                    @Html.ValidationMessageFor(model => model.description, "", new { @class = "text-danger" })
+                </div>
+                <div class="clearfix"></div>
+                <br />
+                <div class="col-md-12">
+                    <div class="pull-right">
+                        <button type="button" class="btn btn-white waves-light" onclick="CloseModal('update-modal')">انصراف</button>&nbsp;
+                        <button type="button" class="btn btn-warning pull-right" data-id="SaveChangesWarehouseForm" data-url="UpdateWarehouse" data-table="WarehousesTbl" onclick="SubmitEditForm(this)">ذخیره</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,73 @@
+﻿@model DataWere.Models.tblClient
+
+@using (@Html.BeginForm("SaveClient", "App", FormMethod.Post, new { @id = "SaveClientForm", enctype = "multipart/form-data", @data_toggle = "validator" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="col-sm-8 col-sm-offset-2">
+            <div class="form-group">
+                <label class="col-md-12 pull-left">نام<span style="color:red;">*</span></label>
+                <div class="col-md-12">
+                    @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control", required = "required", @data_bv_notempty_message = "Emri nuk mund të lihet bosh!" } })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-12 pull-left">نام مستعار<span style="color:red;">*</span></label>
+                <div class="col-md-12">
+                    @Html.EditorFor(model => model.surname, new { htmlAttributes = new { @class = "form-control", required = "required", @data_bv_notempty_message = "Mbiemri nuk mund të lihet bosh!" } })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-12 pull-left">شرکت</label>
+                <div class="col-md-12">
+                    @Html.EditorFor(model => model.company, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-12 pull-left">NIPT</label>
+                <div class="col-md-12">
+                    @Html.EditorFor(model => model.nipt, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-12 pull-left">تلفن 1</label>
+                <div class="col-md-12">
+                    @Html.EditorFor(model => model.phone1, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-12 pull-left">تلفن 2</label>
+                <div class="col-md-12">
+                    @Html.EditorFor(model => model.phone2, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-12 pull-left">ایمیل</label>
+                <div class="col-md-12">
+                    @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-12">
+توضیحات                </label>
+                <div class="col-md-12">
+                    <div class="clearfix"></div>
+                    @Html.EditorFor(model => model.description, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.HiddenFor(model => model.status, new { Value = true })
+                    @Html.HiddenFor(model => model.datecreated, new { Value = DateTime.Now })
+                    @Html.ValidationMessageFor(model => model.description, "", new { @class = "text-danger" })
+                </div>
+                <div class="clearfix"></div>
+                <br />
+                <div class="col-md-12">
+                    <div class="pull-right">
+                        <button type="button" class="btn btn-white waves-light" onclick="CloseModal('create-modal')">انصراف</button>&nbsp;
+                        <button type="button" class="btn btn-success pull-right" data-id="SaveClientForm" data-url="SaveClient" data-table="ClientsTbl" onclick="SubmitCreateForm(this)">ذخیره</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+

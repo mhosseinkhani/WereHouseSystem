@@ -1,0 +1,26 @@
+﻿@model IEnumerable<itka.ViewModels.ProductViewModel>
+<div class="card-box table-responsive">
+    <h4 class="m-t-0 header-title"><b>Menaxho artikujt</b></h4>
+    <div class="text-muted font-13 m-b-30">
+        <button type="button" class="btn btn-success btn-rounded waves-effect waves-light pull-right" data-url="CreateProduct" data-form="SaveProductForm" data-action="PRODUKT" onclick="CreateElement(this)">
+            <span class="btn-label"><i class="fa fa-plus"></i></span>
+            Shto artikull
+        </button>
+    </div>
+    <br />
+    <br />
+    <br />
+    <table id="ProductsTbl" class="table table-striped table-bordered dataTable no-footer dtr-inline">
+        <thead>
+            <tr>
+                <th>Emërtimi</th>
+                <th>Kosi/Numri</th>
+                <th>Përshkrimi</th>
+                <th>Njësia</th>
+                <th>Sasia Minimum në Magazinë</th>                
+                <th>Veprime</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>

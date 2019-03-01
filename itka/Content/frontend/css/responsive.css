@@ -1,0 +1,465 @@
+.dl-menuwrapper{
+	display: none;
+}
+
+
+/*
+=================================================
+				UP FROM 1200PX
+=================================================
+*/ 
+@media (min-width: 1200px) {
+ 
+}
+/*
+=================================================
+			FROM 992PX TO 1199PX
+=================================================
+*/ 
+@media (min-width: 992px) and (max-width: 1199px) {
+	.nav_2 ul li a{
+		padding:10px; 
+	}
+	.top_nav li a, .login_wrap li a{
+		padding: 8px 6px; 
+	}
+	h3{
+		font-size: 24px;
+	}
+	h5{
+		font-size: 18px;
+	}
+	.kf_edu2_intro_wrap::before{
+		width: 40%;
+	}
+	.kf_intro_des_wrap{
+		width: 60%;
+	}
+	.edu2_gallery_des ul li{
+		line-height: normal;
+		margin: 0px;
+	}
+	.edu2_gallery_des ul li a{
+		line-height: normal;
+		font-weight: normal;
+
+	}
+	.wiget-instagram ul li {
+		width: 60px
+	}
+	.edu2_event_wrap.side_change{
+		padding: 30px 30px 20px 220px
+	}
+	.edu2_event_wrap{
+		padding: 30px 220px 20px 30px
+	}
+	.edu2_event_wrap figure{
+		width: 200px;
+	}
+	.edu2_event_wrap .post-option > li{
+		line-height: normal;
+	}
+	.edu2_event_wrap.side_change .post-option li{
+		margin: 0px;
+		float: right;
+		
+	}
+	.edu2_event_wrap .post-option{
+		margin: 0px;
+	}
+	.edu2_event_wrap .edu2_event_des{
+		padding: 0px;
+	}
+	.edu2_event_des span{
+		font-size: 52px;
+		top: 0px;
+	}
+	.edu2_event_wrap .edu2_event_des h4{
+		margin-bottom: 15px; 
+	}
+	.edu2_event_des p{
+		line-height: normal;
+		margin: 0px;
+	}
+	.edu2_event_wrap figure{
+		margin-top: -76px;
+	}
+	.kf_courses_wrap figure{
+		margin-bottom: 30px;
+	}
+	.nav_2{
+		padding: 20px 0;
+	}
+}
+/*
+=================================================
+			FROM 0PX TO 979PX
+=================================================
+*/ 
+@media (max-width: 991px) {
+	#mobile-header{
+		display:none;
+	}
+	.nav_2{
+		padding: 0;
+	}
+	.nav_2 > ul{
+		display:none;
+	}
+	.dl-menuwrapper{
+		display: block;
+	}
+	#header_2 .top_bar_2 .container .row div:first-child{
+		display: none;
+	}
+	#header_2 .top_bar_2 .container .row > div{
+		width: 100%;
+		float: left;
+	}
+	#header_2 .top_nav{
+		float: left;
+
+	}
+	.logo_wrap{
+		text-align: center;
+	}
+
+	.edu2_main_bn_wrap .owl-theme .owl-pagination{
+		bottom: 10px;
+	}
+
+	.edu2_main_bn_wrap figcaption h2{
+		font-size: 40px;
+	}
+	.kf_edu2_intro_wrap::before{
+		width: 30%;
+	}
+	.kf_intro_des_wrap{
+		width: 70%;
+	}
+
+	.kf_edu2_heading2 h3, .kf_edu2_heading1 h3{
+		font-size: 26px;
+	}
+	.kf_edu2_training_des figure{
+		width: auto;
+		left: -150px;
+	}
+	.edu2_pricing_des{
+		margin-bottom: 30px;
+	}
+	footer .widget{
+		margin-bottom: 30px;
+		border-bottom: solid 1px rgba(0,,0)
+	}
+	.edu2_copyright_wrap{
+		text-align: center;
+	}
+	.edu2_ft_logo_wrap{
+		display: inline-block;
+		float: none;
+	}
+	.abt_univ_wrap{
+		margin-bottom: 30px
+	}
+	.edu2_event_wrap.side_change .post-option > li{
+		display: inline-block;
+		float: none;
+	}
+	.edu2_event_wrap.side_change .post-option {
+		text-align: right;
+	}
+	.kf_event_list_des{
+		padding: 20px 20px 20px 0 
+	}
+	.kf_event_list_des p{
+		line-height: 24px;
+	}
+	.kf_event_gallery{
+		margin-bottom: 30px;
+	}
+	.kf-sidebar div.widget:first-child{
+		margin-top: 30px;
+
+	}
+	#filterable-item-filter-1 a{
+		padding:5px 10px; 
+	}
+	.error_thumb{
+		width: 80%;
+	}
+	.error_des{
+		padding: 0 30px;
+	}
+	.error_thumb{
+		bottom: -42px;
+	}
+	.error_des span{
+		top: -120px;
+	}
+	#header_2 .top_bar_2 .container .row div.lng_wrap, #header_2 .top_bar_2 .container .row div.lng_wrap > div{
+		display: block;
+	}
+
+
+}
+/*
+=================================================
+			FROM 768PX TO 979PX
+=================================================
+*/
+
+@media (min-width: 768px) and (max-width: 979px) {
+	
+  
+}
+/*
+=================================================
+			FROM 0PX TO 767PX
+=================================================
+*/
+@media (max-width: 767px) {
+	#kode-header{
+		position:relative;
+	}
+
+	.top_nav{
+		display: none;
+	}
+	.edu2_main_bn_wrap figcaption span, .edu2_main_bn_wrap figcaption p, .edu2_main_bn_wrap .btn-1{
+		display: none;
+	}
+	.edu2_main_bn_wrap figcaption h2{
+		font-size: 30px;
+	}
+	.edu2_main_bn_wrap figure figcaption{
+		margin: 0px;
+		padding:0px 50px;
+		top: 30%;
+	}
+	.kf_intro_des{
+		width: 100%;
+		margin: 15px 0px;
+	}
+	.kf_intro_des_wrap{
+		width: 100%;
+	}
+	.kf_edu2_intro_wrap::before{
+		width:100%;
+		opacity: 0.1
+	}
+	.edu2_counter_des{
+		width: 100%;
+		border-right: none;
+		border-bottom: solid 1px rgba(255,255,255,0.3); 
+	}
+	.edu2_event_des{
+		width: 100%;
+	}
+	.student_slider_thumb{
+		display: none;
+	}
+	.edu2_event_wrap{
+		padding: 20px;
+	}
+	.edu2_event_wrap::before{
+		right: 0px;
+	}
+	.edu2_event_wrap .edu2_event_des{
+		width: 100%;
+	}
+	.edu2_event_wrap figure{
+		position: relative;
+		float: left;
+		width: 100%;
+		margin: 0px;
+	}
+	.side_change::before{
+		left: 0px;
+	}
+	.kf_event_list_wrap{
+		padding:30px;
+	}
+	.kf_event_speakers_des{
+		margin-bottom: 30px;
+	}
+	.event_gallery_des{
+		float: none;
+		margin: 0 -1%;
+		width: auto;
+
+	}
+	
+	 .event_gallery_des li{
+		width: 48%;
+		margin: 1% 1%;
+	}
+	.event_gallery_des li img{
+		width: 100%;
+	}
+	.event_link{
+		margin-top: 30px;
+	}
+	
+	.kf_courses_tabs .nav-tabs > li{
+		width: 100%;
+	}
+	.kf_courses_tabs .nav-tabs > li a{
+		padding:10px 10px; 
+	}
+	.kf_inr_breadcrumb{
+		display: none;
+	}
+	.inr_banner_heading{
+		width: 100%;
+	}
+	.teacher_bio_logo{
+		width: 100%;
+	}
+	.teacher_bio_des ul li{
+		margin-right: 15px;
+	}
+	.skill_progress_des{
+		padding: 30px;
+	}
+	.kf_training_des{
+		padding:30px;
+		width: 100%; 
+	}
+	.kf_training_date{
+		width: 100%;
+		padding:30px 30px 0px 30px;
+		text-align: left; 
+	}
+	.kf_training_wrap li:nth-child(2n) .kf_training_date{
+		padding:30px 30px 0px 30px 
+	}
+	.kf_training_wrap ul li::before, .kf_training_wrap ul li::after{
+		display: none;
+	}
+	.kf_training_wrap ul li{
+		border: solid 1px #ccc;
+		margin-bottom: 20px;
+		padding: 0px;
+
+	}
+	.kf_training_wrap li:nth-child(2n) .kf_training_des{
+		padding:30px 30px 30px 30px;
+		text-align: left;
+	}
+	.filterable_thumb figure{
+		margin:0px; 
+
+	}
+	.error_des span{
+		font-size: 140px;
+		top: -90px;
+	}
+	.error_wrap{
+		padding: 98px 0 0px
+	}
+	.error_thumb{
+		width: 100%;
+		position: static;
+		float: left;
+	}
+	.error_thumb figure img{
+		width: 150%;
+		max-width: inherit;
+
+	}
+	.location_des{
+		margin: -182px 0 0 -63px
+	}
+	.kf_courses_wrap figure{
+		margin-bottom: 30px;
+	}
+	#filterable-item-filter-1 li{
+		margin:3px;
+	}
+
+}
+/*
+=================================================
+			FROM 0PX TO 0PX
+=================================================
+*/
+@media (max-width: 480px) {
+	.lng_wrap button{
+		padding: 10px 
+	}
+	.logo_wrap img{
+		width: 140px;
+	}
+	.location_des{
+		position: static;
+		margin: 60px 0px 0px 0px;
+		width: 100%;
+		float: left;
+	}
+	.edu2_main_bn_wrap figcaption h2{
+		font-size: 20px;
+	}
+	.kf_edu2_heading2 h3, .kf_edu2_heading1 h3{
+		font-size: 20px;
+	}
+	body{
+		line-height: 24px;
+	}
+	.edu2_training_wrap h2{
+		font-size: 30px;
+	}
+	.edu2_training_wrap .countdown li{
+		margin: 0px 1px;
+		width: 65px;
+	}
+	.kf_edu2_training_des{
+		display: none;
+	}
+	.edu_testemonial_wrap figure{
+		float: left;
+		width: 100%;
+		height: auto;
+		position: static;
+	}
+	.edu_testemonial_wrap .kode-text{
+		padding: 20px 0px 0px 0px;
+		float: left;
+		width: 100%;
+	}
+	.edu_testemonial_wrap{
+		padding:20px
+	}
+	.convocation_link{
+		padding: 15px 19px; 
+	}
+	.comment_wrap figure{
+		width: 70px;
+	}
+	.search_bar_des{
+		width: 100%;
+	}
+	.search_bar_des > input[type="search"], .search_bar_des .selectric-wrapper, .inr_pg_search_wrap form > button{
+		width: 100%;
+		margin: 10px 0px;
+	}
+	.inr_pg_search_wrap{
+		padding: 10px 20px
+	}
+	.teacher_bio_des ul li{
+		width: 100%;
+		margin: 3px 0px;
+	}
+	.kf_inr_ban_des h3{
+		font-size: 26px;
+	}
+	h3{
+		font-size: 26px
+	}
+	.filterable_heading .btn-group{
+		width: 100%;
+		margin: 20px 0px;
+	}
+}
+
+
